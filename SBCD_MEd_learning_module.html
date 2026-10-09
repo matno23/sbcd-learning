@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>School-Based Curriculum Development | MEd Learning Module</title>
+<style>
+:root{--navy:#15324b;--teal:#087e8b;--mint:#e8f5f3;--gold:#f2b84b;--ink:#243342;--muted:#607080;--paper:#f6f8fb;--white:#fff;--line:#dbe3ea}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+header{background:linear-gradient(120deg,#15324b,#087e8b);color:white;padding:42px 20px 34px}
+.wrap{max-width:1100px;margin:auto;padding:0 20px}.eyebrow{text-transform:uppercase;letter-spacing:.13em;font-size:.78rem;font-weight:800;color:#bce9e4}
+h1{font-size:clamp(2rem,5vw,3.25rem);line-height:1.12;margin:.45rem 0 1rem;max-width:800px}
+header p{max-width:760px;font-size:1.08rem;color:#eaf7f7}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}.pill{border:1px solid #ffffff60;border-radius:999px;padding:5px 12px;font-size:.86rem}
+nav{background:white;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}.navinner{display:flex;gap:8px;overflow:auto;padding:10px 20px;max-width:1100px;margin:auto}
+nav a{white-space:nowrap;text-decoration:none;color:var(--navy);font-weight:700;padding:8px 12px;border-radius:9px;font-size:.92rem}nav a:hover{background:var(--mint)}
+main{padding:28px 0 60px}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}.card{background:white;border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:0 4px 16px #15324b08}
+.span12{grid-column:span 12}.span8{grid-column:span 8}.span6{grid-column:span 6}.span4{grid-column:span 4}
+h2{color:var(--navy);font-size:1.65rem;line-height:1.25;margin:0 0 12px}h3{color:var(--teal);margin:.25rem 0 .5rem;font-size:1.12rem}
+.kicker{color:var(--teal);font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;font-weight:800}
+.objectives{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}.objective{background:var(--mint);border-radius:12px;padding:14px;font-size:.95rem}
+.callout{border-left:4px solid var(--gold);background:#fff8e8;padding:14px 16px;border-radius:0 10px 10px 0;margin:16px 0}
+.principle{border-top:3px solid var(--teal)}.number{display:inline-grid;place-items:center;background:var(--navy);color:white;width:30px;height:30px;border-radius:9px;font-weight:800;margin-bottom:8px}
+.timeline{position:relative;padding-left:25px;margin-top:18px}.timeline:before{content:"";position:absolute;left:7px;top:6px;bottom:8px;width:2px;background:#b7d9d8}
+.event{position:relative;padding:0 0 22px 18px}.event:before{content:"";position:absolute;left:-23px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--teal);border:3px solid white;box-shadow:0 0 0 2px #b7d9d8}
+.date{font-weight:800;color:var(--teal)}.tag{display:inline-block;background:#edf2f7;color:#3b5268;border-radius:6px;padding:2px 8px;font-size:.78rem;font-weight:700}
+table{border-collapse:collapse;width:100%;margin:12px 0;font-size:.94rem}th,td{border:1px solid var(--line);padding:11px;text-align:left;vertical-align:top}th{background:#edf5f6;color:var(--navy)}
+button{border:0;border-radius:9px;background:var(--teal);color:white;font-weight:800;padding:11px 16px;cursor:pointer;font-size:.95rem}button:hover{filter:brightness(.93)}button.secondary{background:#eaf0f5;color:var(--navy)}.question{padding:16px 0;border-bottom:1px solid var(--line)}.question:last-child{border-bottom:0}.question p{font-weight:700;margin:0 0 9px}.question label{display:block;padding:7px 10px;border-radius:8px;cursor:pointer}.question label:hover{background:#f2f7f8}input[type=radio]{margin-right:8px}.feedback{font-weight:700;margin-top:8px}.good{color:#13734b}.bad{color:#a84b22}
+.reflection textarea{width:100%;min-height:110px;border:1px solid #cbd6df;border-radius:10px;padding:12px;font:inherit;resize:vertical}
+footer{background:var(--navy);color:#eaf1f6;padding:25px 0;font-size:.9rem}footer a{color:#bce9e4}
+.small{font-size:.9rem;color:var(--muted)}.progressbar{height:8px;background:#e2eaf0;border-radius:999px;overflow:hidden;margin:12px 0}.progressbar div{height:100%;width:0;background:var(--gold);transition:width .25s}
+@media(max-width:760px){.span8,.span6,.span4{grid-column:span 12}.objectives{grid-template-columns:1fr}.card{padding:18px}header{padding-top:32px}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap">
+  <div class="eyebrow">Master of Education · Interactive learning module</div>
+  <h1>School-Based Curriculum Development (SBCD)</h1>
+  <p>Explore the principles that guide school-led curriculum decisions and trace the historical shift from centrally prescribed curricula toward greater school and teacher agency.</p>
+  <div class="pills"><span class="pill">Conceptual learning</span><span class="pill">Historical timeline</span><span class="pill">Critical reflection</span><span class="pill">Knowledge check</span></div>
+ </div>
+</header>
+<nav><div class="navinner">
+<a href="#overview">Overview</a><a href="#principles">Principles of SBCD</a><a href="#history">Historical background</a><a href="#application">Apply it</a><a href="#quiz">Knowledge check</a><a href="#reflection">Reflection</a>
+</div></nav>
+<main class="wrap">
+<div class="grid">
+<section class="card span12" id="overview">
+ <div class="kicker">01 · Start here</div><h2>What is SBCD?</h2>
+ <p><strong>School-Based Curriculum Development (SBCD)</strong> is a process through which a school community—often including teachers, school leaders, learners, families and relevant community partners—takes an active role in designing, adapting, implementing and evaluating curriculum in response to learners’ needs and local circumstances.</p>
+ <div class="callout"><strong>Key idea:</strong> SBCD is not simply choosing classroom activities. It involves purposeful curriculum decision-making: identifying needs, setting goals, selecting content and pedagogy, organising learning, assessing outcomes and revising the curriculum using evidence.</div>
+ <div class="objectives">
+  <div class="objective"><strong>Learning outcome 1</strong><br>Explain SBCD and distinguish it from a fully centralised curriculum model.</div>
+  <div class="objective"><strong>Learning outcome 2</strong><br>Analyse key principles that support effective and equitable SBCD.</div>
+  <div class="objective"><strong>Learning outcome 3</strong><br>Summarise major historical developments and consider their implications for schools.</div>
+ </div>
+</section>
+<section class="card span8">
+ <div class="kicker">A useful framework</div><h2>The SBCD cycle</h2>
+ <p>SBCD is best understood as an iterative cycle rather than a one-off document-writing exercise.</p>
+ <table><thead><tr><th>Stage</th><th>Guiding question</th><th>Possible evidence</th></tr></thead><tbody>
+ <tr><td><strong>1. Diagnose</strong></td><td>What do our learners and community need?</td><td>Assessment data, learner voice, community context</td></tr>
+ <tr><td><strong>2. Design</strong></td><td>What should learners know and be able to do?</td><td>Learning outcomes, curriculum map, planned units</td></tr>
+ <tr><td><strong>3. Implement</strong></td><td>Which teaching and learning approaches fit?</td><td>Lesson plans, learning resources, teacher collaboration</td></tr>
+ <tr><td><strong>4. Evaluate</strong></td><td>What is working, for whom, and why?</td><td>Student work, formative assessment, feedback</td></tr>
+ <tr><td><strong>5. Refine</strong></td><td>What should we retain, adapt or discontinue?</td><td>Review meeting, revised plans, action steps</td></tr>
+ </tbody></table>
+</section>
+<section class="card span4">
+ <div class="kicker">Centralised and school-based</div><h2>Compare the emphasis</h2>
+ <p><span class="tag">Centralised emphasis</span></p><p>Major curriculum decisions are made primarily by a central authority, supporting consistency across schools.</p>
+ <p><span class="tag">SBCD emphasis</span></p><p>Schools and teachers have meaningful agency to interpret, contextualise or develop curriculum within relevant national or system requirements.</p>
+ <p class="small">In practice, most systems combine central expectations with some local discretion. SBCD does not necessarily mean complete school autonomy.</p>
+</section>
+<section class="span12" id="principles">
+ <div class="kicker">02 · Core concepts</div><h2>Principles of SBCD</h2>
+ <p>These principles are a practical synthesis for analysing SBCD. Terminology and emphasis can vary across countries and theoretical traditions.</p>
+ <div class="grid">
+  <article class="card span4 principle"><div class="number">1</div><h3>Needs-based and learner-centred</h3><p>Curriculum choices respond to learners’ prior knowledge, interests, strengths, barriers and developmental needs.</p><p class="small"><strong>Ask:</strong> What evidence tells us what learners need?</p></article>
+  <article class="card span4 principle"><div class="number">2</div><h3>Contextual relevance</h3><p>Learning connects with local culture, language, environment, community knowledge and real-world issues while maintaining broad educational aims.</p><p class="small"><strong>Ask:</strong> How can local examples deepen—not narrow—learning?</p></article>
+  <article class="card span4 principle"><div class="number">3</div><h3>Teacher agency and professionalism</h3><p>Teachers use subject knowledge, pedagogical judgement and evidence to adapt curriculum collaboratively and responsibly.</p><p class="small"><strong>Ask:</strong> What professional learning do teachers need?</p></article>
+  <article class="card span4 principle"><div class="number">4</div><h3>Participation and collaboration</h3><p>Curriculum decisions benefit from dialogue among teachers, leaders, learners, families and community stakeholders, with roles clearly defined.</p><p class="small"><strong>Ask:</strong> Whose perspectives are missing?</p></article>
+  <article class="card span4 principle"><div class="number">5</div><h3>Coherence and alignment</h3><p>Outcomes, content, teaching approaches and assessment reinforce one another and align with applicable standards and progression across year levels.</p><p class="small"><strong>Ask:</strong> Do assessments measure the intended outcomes?</p></article>
+  <article class="card span4 principle"><div class="number">6</div><h3>Inclusion and equity</h3><p>Curriculum design anticipates different learning needs and avoids treating local adaptation as a reason to lower expectations or exclude learners.</p><p class="small"><strong>Ask:</strong> Who may benefit less from this design?</p></article>
+  <article class="card span4 principle"><div class="number">7</div><h3>Evidence-informed evaluation</h3><p>Schools review learner progress, teaching experiences and stakeholder feedback to improve curriculum decisions over time.</p><p class="small"><strong>Ask:</strong> What evidence would justify changing the unit?</p></article>
+  <article class="card span4 principle"><div class="number">8</div><h3>Feasibility and sustainability</h3><p>Plans consider teacher workload, time, resources, leadership support and realistic implementation conditions.</p><p class="small"><strong>Ask:</strong> Can the school sustain this beyond a pilot?</p></article>
+  <article class="card span4 principle"><div class="number">9</div><h3>Reflective, continuous improvement</h3><p>SBCD treats curriculum as revisable: teams learn from implementation, document decisions and improve the next cycle.</p><p class="small"><strong>Ask:</strong> What will we change next time—and why?</p></article>
+ </div>
+</section>
+<section class="card span12" id="history">
+ <div class="kicker">03 · Historical background</div><h2>How did SBCD develop?</h2>
+ <p>SBCD did not emerge at one universal moment. Its development differs by national context, but several broad trends help explain its growth.</p>
+ <div class="timeline">
+  <div class="event"><div class="date">Early to mid-20th century · Central planning and standardisation</div><p>Many education systems relied heavily on centrally prescribed syllabuses, textbooks and examinations. Central direction was associated with consistency, nation-building and quality control, but could leave limited room for local adaptation.</p></div>
+  <div class="event"><div class="date">Progressive education and curriculum inquiry · Early to mid-20th century</div><p>Progressive and child-centred approaches, including the work of John Dewey, emphasised experience, inquiry and the relationship between school learning and democratic life. These ideas helped strengthen arguments for attending to learners and context.</p></div>
+  <div class="event"><div class="date">1960s–1970s · Curriculum reform and teacher participation</div><p>Curriculum reform movements gave greater attention to curriculum planning as a professional and educational process. Work associated with curriculum theorists such as Lawrence Stenhouse highlighted teachers’ roles in inquiry, interpretation and curriculum development.</p></div>
+  <div class="event"><div class="date">1980s–1990s · School autonomy and site-based management</div><p>In a number of systems, decentralisation and school-improvement reforms increased interest in decisions made closer to schools. SBCD became linked to teacher collaboration, school leadership, local responsiveness and professional development.</p></div>
+  <div class="event"><div class="date">2000s · Accountability, standards and evidence</div><p>Standards-based reform and stronger accountability requirements created a dual challenge: schools were encouraged to adapt learning to local needs while demonstrating alignment with national standards and measurable outcomes.</p></div>
+  <div class="event"><div class="date">2010s–today · Competencies, inclusion and changing contexts</div><p>Curriculum work increasingly addresses digital learning, global and local issues, learner diversity, transferable competencies and community relevance. SBCD remains shaped by tensions between flexibility, equity, accountability and school capacity.</p></div>
+ </div>
+ <div class="callout"><strong>Historical interpretation:</strong> The broad movement is not a simple replacement of central control by school freedom. Contemporary systems commonly negotiate a balance between shared curriculum expectations and context-sensitive decisions.</div>
+ <h3>Important thinkers to investigate</h3>
+ <table><thead><tr><th>Thinker / tradition</th><th>Connection to curriculum thinking</th><th>Useful question for MEd study</th></tr></thead><tbody>
+ <tr><td>John Dewey</td><td>Experience, inquiry, democracy and the relationship between school and society.</td><td>How can local experience support rigorous disciplinary learning?</td></tr>
+ <tr><td>Ralph Tyler</td><td>Objectives, learning experiences, organisation and evaluation as curriculum-planning questions.</td><td>How can a school align outcomes, teaching and assessment?</td></tr>
+ <tr><td>Lawrence Stenhouse</td><td>Curriculum as a process open to teacher inquiry, interpretation and development.</td><td>What conditions help teachers investigate and improve practice?</td></tr>
+ <tr><td>School-based management traditions</td><td>Local decision-making, leadership, participation and school improvement.</td><td>Which decisions should sit at school level, and with what safeguards?</td></tr>
+ </tbody></table>
+ <p class="small">This is a broad overview, not a country-specific chronology. For academic work, connect the timeline to your country’s curriculum policies and verify dates and policy changes using official documents and peer-reviewed literature.</p>
+</section>
+<section class="card span6" id="application">
+ <div class="kicker">04 · Apply your understanding</div><h2>Mini case study</h2>
+ <p>A secondary school notices that learners can recall environmental science terms but struggle to apply them to local problems. Teachers propose a cross-curricular unit on water quality using local data, science concepts, mathematics and persuasive writing. The school must align the unit with required learning standards and ensure all learners can participate.</p>
+ <h3>Discuss with a study group</h3>
+ <ol>
+ <li>What learner or community needs should be investigated before designing the unit?</li>
+ <li>Which stakeholders should contribute, and how will learner voice be included?</li>
+ <li>How could the team align outcomes, learning activities and assessment?</li>
+ <li>What evidence would show whether the unit improved learning?</li>
+ <li>What constraints or equity risks should be considered?</li>
+ </ol>
+ <p class="small">MEd extension: identify one tension between local relevance and system-wide consistency, then propose a reasoned response.</p>
+</section>
+<section class="card span6">
+ <div class="kicker">Planning tool</div><h2>Draft an SBCD decision</h2>
+ <p>Use this short template to translate principles into a practical curriculum proposal.</p>
+ <div class="reflection">
+ <label for="need"><strong>1. Learner/community need</strong></label><textarea id="need" placeholder="What evidence indicates a learning need?"></textarea>
+ <label for="outcome"><strong>2. Intended learning outcome</strong></label><textarea id="outcome" placeholder="What should learners know, understand or be able to do?"></textarea>
+ <label for="evidence"><strong>3. Evidence of success</strong></label><textarea id="evidence" placeholder="What learner work or assessment evidence will be reviewed?"></textarea>
+ <button type="button" class="secondary" onclick="savePlan()">Save notes in this browser</button> <button type="button" class="secondary" onclick="clearPlan()">Clear</button>
+ <p id="saveStatus" class="small" aria-live="polite">Notes remain on this device/browser only.</p>
+ </div>
+</section>
+<section class="card span12" id="quiz">
+ <div class="kicker">05 · Check your understanding</div><h2>Knowledge check</h2><p>Choose one answer for each question, then select <strong>Check answers</strong>.</p>
+ <div class="progressbar"><div id="progress"></div></div>
+ <form id="quizForm">
+ <div class="question"><p>1. Which statement best describes SBCD?</p>
+ <label><input type="radio" name="q1" value="a">It removes the need for national or system-wide curriculum expectations.</label>
+ <label><input type="radio" name="q1" value="b">It enables a school community to design, adapt and evaluate curriculum in context.</label>
+ <label><input type="radio" name="q1" value="c">It means each teacher works independently without collaboration.</label><div id="f1" class="feedback"></div></div>
+ <div class="question"><p>2. Which action best reflects evidence-informed SBCD?</p>
+ <label><input type="radio" name="q2" value="a">Keeping a unit unchanged because it has always been used.</label>
+ <label><input type="radio" name="q2" value="b">Selecting activities based only on staff preference.</label>
+ <label><input type="radio" name="q2" value="c">Reviewing learner work and feedback, then revising the unit.</label><div id="f2" class="feedback"></div></div>
+ <div class="question"><p>3. What is a central historical tension in SBCD?</p>
+ <label><input type="radio" name="q3" value="a">Balancing local flexibility with shared standards and equity.</label>
+ <label><input type="radio" name="q3" value="b">Choosing between having teachers or having learners in school.</label>
+ <label><input type="radio" name="q3" value="c">Replacing assessment with community activities.</label><div id="f3" class="feedback"></div></div>
+ <div class="question"><p>4. Which thinker is especially associated with curriculum as a process involving teacher inquiry?</p>
+ <label><input type="radio" name="q4" value="a">Lawrence Stenhouse</label>
+ <label><input type="radio" name="q4" value="b">Isaac Newton</label>
+ <label><input type="radio" name="q4" value="c">Charles Darwin</label><div id="f4" class="feedback"></div></div>
+ <div class="question"><p>5. A school adapts examples to local culture but checks that all learners meet ambitious learning outcomes. Which principles are most evident?</p>
+ <label><input type="radio" name="q5" value="a">Local relevance and equity/coherence</label>
+ <label><input type="radio" name="q5" value="b">Teacher isolation and fixed curriculum</label>
+ <label><input type="radio" name="q5" value="c">Feasibility only</label><div id="f5" class="feedback"></div></div>
+ <button type="button" onclick="checkQuiz()">Check answers</button> <button type="button" class="secondary" onclick="resetQuiz()">Try again</button>
+ <p id="score" aria-live="polite" style="font-weight:800;font-size:1.1rem"></p>
+ </form>
+</section>
+<section class="card span12" id="reflection">
+ <div class="kicker">06 · MEd-level reflection</div><h2>From understanding to critique</h2>
+ <p>Write a short critical response to the following prompt:</p>
+ <blockquote><strong>“SBCD can make curriculum more responsive, but it may also reproduce inequalities between schools.” Discuss.</strong></blockquote>
+ <p>In your response, consider school resources, teacher expertise, leadership, stakeholder participation, accountability and mechanisms for protecting equity. Support your position with course readings and policy evidence.</p>
+ <label for="reflectionText"><strong>Your reflection</strong></label>
+ <textarea id="reflectionText" style="width:100%;min-height:130px;border:1px solid #cbd6df;border-radius:10px;padding:12px;font:inherit" placeholder="Draft your argument, evidence and counterargument here..."></textarea>
+ <button type="button" class="secondary" onclick="downloadReflection()">Download reflection as .txt</button>
+</section>
+<section class="card span12">
+ <div class="kicker">Suggested starting points</div><h2>Further reading</h2>
+ <ul>
+ <li>Dewey, J. (1916). <em>Democracy and Education.</em> A foundational account of experience, education and democratic life.</li>
+ <li>Tyler, R. W. (1949). <em>Basic Principles of Curriculum and Instruction.</em> A classic framework for curriculum planning and evaluation.</li>
+ <li>Stenhouse, L. (1975). <em>An Introduction to Curriculum Research and Development.</em> A key text on curriculum process and teacher inquiry.</li>
+ <li>OECD curriculum and school-improvement publications, alongside your national or state curriculum policy documents.</li>
+ </ul>
+ <p class="small">Use your university library to confirm editions and citation details, and add recent peer-reviewed research relevant to your education system. This learning module is an introductory synthesis, not a substitute for required readings.</p>
+</section>
+</div>
+</main>
+<footer><div class="wrap"><strong>MEd Learning Module · SBCD</strong><p>Learning sequence: define → analyse principles → trace history → apply → assess → reflect.</p></div></footer>
+<script>
+const answers={q1:'b',q2:'c',q3:'a',q4:'a',q5:'a'};
+const explanations={
+q1:'Correct: SBCD gives schools a meaningful role in contextual curriculum decisions, usually within wider requirements.',
+q2:'Correct: evaluation uses evidence to decide what to retain or improve.',
+q3:'Correct: SBCD commonly involves negotiating local responsiveness, consistency and equity.',
+q4:'Correct: Stenhouse is strongly associated with curriculum process and teacher inquiry.',
+q5:'Correct: local relevance should be combined with coherent expectations and equitable access.'
+};
+function checkQuiz(){let score=0;for(let i=1;i<=5;i++){let q='q'+i,sel=document.querySelector('input[name="'+q+'"]:checked'),f=document.getElementById('f'+i);if(sel&&sel.value===answers[q]){score++;f.className='feedback good';f.textContent=explanations[q]}else{f.className='feedback bad';f.textContent='Not quite. '+explanations[q]}}document.getElementById('score').textContent='Your score: '+score+'/5'+(score===5?' — Excellent work!':' — Review the explanations and try again.');document.getElementById('progress').style.width=(score*20)+'%'}
+function resetQuiz(){document.getElementById('quizForm').reset();for(let i=1;i<=5;i++){let f=document.getElementById('f'+i);f.textContent='';f.className='feedback'}document.getElementById('score').textContent='';document.getElementById('progress').style.width='0%'}
+function savePlan(){['need','outcome','evidence'].forEach(id=>{try{localStorage.setItem('sbcd_'+id,document.getElementById(id).value)}catch(e){}});document.getElementById('saveStatus').textContent='Save attempted. Notes are stored locally in this browser when local storage is available.'}
+function clearPlan(){['need','outcome','evidence'].forEach(id=>{document.getElementById(id).value='';try{localStorage.removeItem('sbcd_'+id)}catch(e){}});document.getElementById('saveStatus').textContent='Notes cleared.'}
+window.addEventListener('DOMContentLoaded',()=>{['need','outcome','evidence'].forEach(id=>{try{document.getElementById(id).value=localStorage.getItem('sbcd_'+id)||''}catch(e){}})})
+function downloadReflection(){let content='MEd Reflection: School-Based Curriculum Development\\n\\n'+document.getElementById('reflectionText').value+'\\n\\nSBCD planning notes\\nLearner/community need: '+document.getElementById('need').value+'\\nIntended outcome: '+document.getElementById('outcome').value+'\\nEvidence of success: '+document.getElementById('evidence').value;let blob=new Blob([content],{type:'text/plain;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='SBCD_MEd_reflection.txt';a.click();URL.revokeObjectURL(url)}
+</script>
+</body>
+</html>
